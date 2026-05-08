@@ -1,0 +1,25 @@
+project/
+│
+├── app.py                  //
+├── train_ann.py            // 訓練 ANN && 儲存權重
+├── evaluate.py             // 比較 ANN/SNN && 計算 accuracy, energy
+│
+├── models/
+│   ├── ann_model.py        // ANN 結構
+│   └── snn_model.py        // SNN 結構
+│
+├── conversion/
+│   └── ann_to_snn.py       // ANN -> SNN conversion
+│
+├── utils/
+│   ├── energy.py           // MAC/SOP energy caculation
+│   ├── metrics.py
+│   └── visualization.py    // Draw bar chart, comparison chart, spile chart
+│
+├── datasets/
+│
+├── saved_models/
+│
+├── results/
+│
+└── requirements.txt
