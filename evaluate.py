@@ -128,3 +128,14 @@ print()
 print(f"SNN Energy Ratio : {snn_energy / ann_energy * 100:.4f}%")
 
 print("============================")
+
+from utils.visualization import (
+    plot_accuracy,
+    plot_energy
+)
+
+plot_accuracy(ann_acc, snn_acc)
+
+plot_energy(ann_energy, snn_energy)
+
+print("Charts saved in ./results/")
