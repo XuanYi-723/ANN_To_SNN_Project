@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 import snntorch as snn
-
+# 定義脈衝神經網路 (SNN) 模型
 class NetSNN(nn.Module):
 
     def __init__(self, ann_model):
